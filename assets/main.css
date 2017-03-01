@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Reset some basic elements
  */
@@ -11,8 +12,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  font: 400 16px/1.5 メイリオ, "Hiragino Kaku Gothic Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
   background-color: #fdfcfa;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -31,10 +32,20 @@ ul, ol, dl, figure,
   margin-bottom: 15px; }
 
 h1 {
-  font-size: 20px; }
+  margin: 2em 0 1em 0;
+  font-size: 20px;
+  color: #863E29;
+  font-weight: bold; }
 
 h2 {
-  font-size: 19.2px; }
+  margin: 1.5em 0 0.5em 0;
+  font-size: 19.2px;
+  color: #863E29;
+  font-weight: bold; }
+
+h3 {
+  margin: 1em 0 0.2em 0;
+  font-weight: bold; }
 
 /**
  * Images
@@ -65,7 +76,7 @@ li > ol {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h4, h5, h6 {
   font-weight: 400; }
 
 /**
@@ -300,6 +311,10 @@ pre {
  */
 .page-content {
   padding: 30px 0; }
+  .page-content a {
+    color: #863E29; }
+    .page-content a:hover {
+      color: #863E29; }
 
 .page-heading {
   font-size: 20px; }
@@ -320,6 +335,16 @@ pre {
 
 .page-img {
   margin: 20px 0; }
+
+.photo-frame {
+  display: inline-block;
+  padding: 5px;
+  -webkit-box-shadow: 1px 1px 5px #000;
+  -moz-box-shadow: 1px 1px 5px #000;
+  box-shadow: 1px 1px 5px #000; }
+
+.max-photo-width {
+  max-width: 600px; }
 
 /**
  * Posts
